@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://maven.fullstory.com" }
+        maven { url 'https://androidx.dev/snapshots/builds/9262568/artifacts/repository' }
+    }
+}
+rootProject.name = "fullstory-compose"
+include ':fullstoryapptest'
+include ':metrics'
